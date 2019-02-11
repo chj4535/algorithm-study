@@ -50,27 +50,35 @@ Array.prototype.compare = function(array) {
 
 
 var findMinArrowShots = function(points) {
-
+    shot=0;
     bal_num=points.length;
     points.sort(sortfun);
     // console.log(points);
 
-    now_last=0;
+    now_last=Number.MIN_SAFE_INTEGER
+    now_front=Number.MAX_SAFE_INTEGER;
+    // console.log(now_front);
+    // console.log(now_last);
 
     while(points.length!=0){
-      // console.log(shot);
-      // console.log(points);
-      if(now_last<points[0][0]){
+       // console.log(shot);
+       // console.log(points);
+       if(now_last<points[0][0]){
         shot++;
+        now_front=points[0][0];
         now_last=points[0][1];
         points.shift();
       }
       else{
+        if(now_front<points[0][0]) now_front=points[0][0];
+        if(now_last>points[0][1]) now_last=points[0][1];
         points.shift();
+
       }
+      // console.log(now_front,now_last);
     }
     console.log(shot);
     return shot;
 };
 
-findMinArrowShots([[1,2],[3,4],[5,6],[7,8]]);
+findMinArrowShots([[9,12],[1,10],[4,11],[8,12],[3,9],[6,9],[6,7]]);
