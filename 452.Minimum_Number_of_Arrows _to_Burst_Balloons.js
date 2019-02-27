@@ -1,3 +1,9 @@
+/*
+풍선의 시작 부분을 중점으로 정렬, 같은 시작시 끝이 빠른 걸 앞으로 오게 정렬했다
+하지만 사실 시작 부분을 볼 필요없이 끝부분 기준으로 정렬도 풀리는 문제이다.
+*/
+
+
 /**
  * @param {number[][]} points
  * @return {number}
@@ -23,31 +29,6 @@ function sortfun(a,b){
     else return 0;
   }
 }
-
-
-Array.prototype.compare = function(array) {
-  // console.log(this);
-  // console.log(array);
-  if (!array) {
-    return false;
-  }
-  if (this.length !== array.length) {
-    return false;
-  }
-  for (var i = 0, l = this.length; i < l; i++) {
-    if (this[i] instanceof Array && array[i] instanceof Array) {
-      if (!this[i].compare(array[i])) {
-        return false;
-      }
-    }
-    else if (this[i] !== array[i]) {
-      return false;
-    }
-  }
-  return true;
-}
-
-
 
 var findMinArrowShots = function(points) {
     shot=0;
