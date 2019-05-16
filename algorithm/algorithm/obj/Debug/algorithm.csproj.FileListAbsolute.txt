@@ -1,0 +1,6 @@
+Z:\study\estsoft algorithm-study.git\algorithm\algorithm\bin\Debug\algorithm.exe.config
+Z:\study\estsoft algorithm-study.git\algorithm\algorithm\bin\Debug\algorithm.exe
+Z:\study\estsoft algorithm-study.git\algorithm\algorithm\bin\Debug\algorithm.pdb
+Z:\study\estsoft algorithm-study.git\algorithm\algorithm\obj\Debug\algorithm.csprojResolveAssemblyReference.cache
+Z:\study\estsoft algorithm-study.git\algorithm\algorithm\obj\Debug\algorithm.exe
+Z:\study\estsoft algorithm-study.git\algorithm\algorithm\obj\Debug\algorithm.pdb
